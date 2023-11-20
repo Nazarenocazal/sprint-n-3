@@ -1,0 +1,203 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1 { font-size:50px; }
+h2 { font-size:35px; }
+h3 { font-size:30px; }
+p  { font-size:20px; }
+li { font-size:20px; }
+
+button {
+    font-size:15px;
+    font-weight:700;
+    padding: 5px 20px;
+    border-radius: 10px;
+    border: 1px solid rgba(1, 14, 2, 0.664);
+    box-shadow: 2px 2px 5px rgba(1, 14, 2, 0.349);
+    color: white;
+    background-color: cadetblue
+}
+
+button:hover {
+    background-color: green;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+header {
+    background-color: aliceblue;
+}
+
+header .logo {
+    margin: 0;
+    padding: 15px 30px;
+    font-weight: bold;
+    color: cadetblue;
+    font-size: 30px;
+}
+
+header .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom:25px;
+}
+
+header a {
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+header a:hover {
+    color: green;
+}
+
+#hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 60vh;
+    color: white;
+    background-image:url(../img/mundo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#sabias-que .container {
+    text-align:center ;
+    padding: 50px;
+    background-color: antiquewhite;
+    background-size: cover;
+    color: rgb(10, 0, 0);
+    
+    
+}
+
+#experiencias {
+    background-color: rgba(30,30,30);
+    color: white;
+    text-align: center;
+}
+
+#experiencias .container {
+    padding: 100px 10px;
+}
+
+#experiencias h2 {
+    margin-top: 0%;
+}
+
+#experiencias p {
+    display:none;
+    text-align: center;
+    justify-content: center;
+}
+
+#experiencias .carta {
+
+}
+
+.carta:first-child{background-image:url(../img/aladelta.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+.carta:nth-child(2) {background-image:url(../img/treaking.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+.carta:nth-child(3) {background-image:url(../img/aguas.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+#mas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(30,30,30);
+    color: white;
+    height: 60vh;
+}
+#mas button { 
+    font-size: 40px;
+}
+footer {
+    background-color: rgb(230,230,230);
+}
+footer p {
+    margin: 0;
+    color: rgb(100,100,100);
+}
+footer .container {
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+@media(min-width: 780px){
+    header{
+        position: fixed;
+        width: 100%;
+    }
+
+    header.container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right:20px;
+    }
+
+    #sabias-que .container{
+        display: flex;
+        justify-content:center;
+
+    }
+
+    #sabias-que .img container{
+        background-image: url(../img/anteojos.jpg);
+        background-size: cover;
+        background-position: center center;
+    }
+    
+}
+
+.info-2{
+    background-color: rgba(138, 190, 190, 0.658);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    color: rgb(7, 7, 7);
+    text-align: center;
+    text-decoration: underline;
+    text-shadow: 10px 10px 10px;
+}
+
+@media(min-width:768px){
+
+    body {
+        padding: 0px 30px;
+    }
+}
